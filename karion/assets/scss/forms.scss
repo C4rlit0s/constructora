@@ -1,0 +1,307 @@
+/* ==========================================================================
+   [Start] All Style Form
+========================================================================== */
+input[type='text'],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+textarea, select {
+    background-color: #ffffff;
+    color: #9b9b9b;
+    font-size: 13px;
+    padding: 4px 18px;
+    line-height: 22px;
+    width: 100%;
+    @include border-radius(0);
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eeeeee;
+    height: 40px;
+    @include transition(all 300ms linear 0ms);
+}
+textarea {
+    height: 125px;
+    max-width: 100%;
+    padding: 12px 18px;
+}
+input[type='text']:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+    border-color: $primary_color;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+input::-webkit-input-placeholder, textarea::-webkit-placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+input::-o-placeholder, textarea::-o-placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+input::-ms-placeholder, textarea::-ms-placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+
+.wpb_revslider_element .wpcf7-response-output {
+    display: none!important;
+}
+div.wpcf7-mail-sent-ok {
+    border: 2px solid green;
+}
+
+.wpb_widgetised_column .tnp-field-email input::-moz-placeholder, .wpb_widgetised_column .tnp-field-email textarea::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+.wpb_widgetised_column .tnp-field-email input::-webkit-input-placeholder, .wpb_widgetised_column .tnp-field-email textarea::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+.placeholder-dark input::-o-placeholder, .wpb_widgetised_column .tnp-field-email textarea::-o-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+.wpb_widgetised_column .tnp-field-email input::-ms-placeholder, .wpb_widgetised_column .tnp-field-email textarea::-ms-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+.wpb_widgetised_column .tnp-field-email input {
+    color: #fff;
+}
+.wpcf7-form {
+    .ajax-loader {
+        display: none;
+    }
+}
+body span.wpcf7-not-valid-tip {
+    color: $primary_color;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: center!important;
+}
+body .wpcf7-mail-sent-ng {
+    text-align: center;
+    color: red;
+}
+body div.wpcf7-validation-errors,
+body div.wpcf7-mail-sent-ng {
+    border: medium none;
+    //color: $secondary_color;
+    display: block;
+    margin: 10px 0 30px;
+    text-align: center;
+    color: red;
+    padding: 0;
+    font-size: 14px;
+}
+.get-contact-page {
+    h3 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }    
+    a {
+        font-size: 13px;
+        font-weight: 600;
+        color: $primary_color;
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 6px;
+        &:before {
+            content: "";
+            width: 22px;
+            height: 2px;
+            background-color: $primary_color;
+            position: absolute;
+            bottom: 0;
+            left: 0;       
+            @include transition(all 300ms linear 0ms);
+        }
+        &:hover {
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+    p {
+        margin-bottom: 7px;
+    }
+}
+
+/*Contact Us*/
+.wp-contact-us-form {
+    .wpcf7-form-control {
+        margin-bottom: 30px;
+        border: 1px solid $color_ebe;
+        font-family: $font_monter;
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: $color_666;
+            font-family: $font_monter;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+            color: $color_666;
+            font-family: $font_monter;
+        }
+        &::-ms-input-placeholder { /* IE 10+ */
+            color: $color_666;
+            font-family: $font_monter;
+        }
+        &::-moz-placeholder { /* Firefox 18- */
+            color: $color_666;
+            font-family: $font_monter;
+        }
+    }
+    .wpcf7-text, .wpcf7-number {
+        height: 50px;
+        line-height: 48px;
+        padding-bottom:0;
+        padding-top: 0;
+    }
+    .wpcf7-textarea {
+        margin-bottom: 20px;
+        min-height: 166px;
+        &:focus {
+            border-color: $primary_color;
+        }
+        font-family: $font_monter;
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: $color_gray;
+            font-family: $font_monter;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+            font-style: normal;
+            color: $color_gray;
+            font-family: $font_monter;
+        }
+        &::-ms-input-placeholder { /* IE 10+ */
+            font-style: normal;
+            color: $color_gray;
+            font-family: $font_monter;
+        }
+        &::-moz-placeholder { /* Firefox 18- */
+            font-style: normal;
+            color: $color_gray;
+            font-family: $font_monter;
+        }
+    }
+    .cms-contact-submit {
+        position: relative;
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+        .wpcf7-submit {
+            background-color: $primary_color;
+            color: $color_white;
+            padding: 0 15px;
+            font-size: 14px;
+            letter-spacing: 0.05em!important;
+            font-family: $font_monter;
+            width: 180px;
+            height: 50px;
+            line-height: 48px;
+        }
+        .ajax-loader {
+            position: absolute;
+            right: 0;
+            bottom: -30px;
+        }
+    }
+}
+.wp-form-slide {
+    width: 180px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    .wpcf7-form-control {
+        width: 180px;
+        display: block;
+        font-size: 12px;
+        margin: 0 auto;
+        color: $color_fff;
+        &.wpcf7-text, &.wpcf7-number {
+            text-align: center!important;
+            height: 30px;
+            line-height: 28px;
+            background-color: transparent!important;
+            border: none;
+            border-bottom: 1px solid $color_ebe;
+            margin-bottom: -4px;
+        }
+        &.wpcf7-submit {
+            background-color: $primary_color;
+            color: $color_fff;
+            font-family: $font_monter;
+            height: 50px;
+            text-align: center!important;
+            padding: 0 10px;
+            letter-spacing: 0.05em!important;
+            line-height: 48px;
+            margin-top: 22px;
+            border: 2px solid $primary_color;
+        }
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: $color_ebe;
+            font-family: $font_monter;
+            text-transform: uppercase;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+            color: $color_ebe;
+            font-family: $font_monter;
+            text-transform: uppercase;
+        }
+        &::-ms-input-placeholder { /* IE 10+ */
+            color: $color_ebe;
+            font-family: $font_monter;
+            text-transform: uppercase;
+        }
+        &::-moz-placeholder { /* Firefox 18- */
+            color: $color_ebe;
+            font-family: $font_monter;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .cms-cshero-contact-us {
+        .cms-input-contact-us {
+            .wpcf7-textarea {
+                min-height: auto;
+            }
+        }
+        .cms-contact-submit {
+            text-align: center;
+        }
+    }
+}
+
+/* ==========================================================================
+   [End] All Style Form
+========================================================================== */

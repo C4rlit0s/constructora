@@ -1,0 +1,18 @@
+<pre>------------ [Dec 28 2017] ------------ 
+#! Version 1.0.0
+
+<pre>------------ [Dec 29 2017] ------------ 
+#! Version 1.0.1
+--Fix Thumbnail testimonial
+--Fix Widget in footer
+--Fix Contact not display successful report
+--Fix make zise title smaller for carousel service
+
+<pre>------------ [Jan 03 2018] ------------
+#! Version 1.0.2
+--Add woocommerce
+
+<pre>------------ [Jan 08 2018] ------------
+#! Version 1.0.3
+--Make sample demo data
+--fix some bug

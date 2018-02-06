@@ -1,0 +1,82 @@
+/* ==========================================================================
+  [Start] Large devices (desktops, 992px and up)
+========================================================================== */
+@media screen and (max-width: 1600px) {
+
+}
+@media screen and (max-width: 1360px) {
+
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+/* ==========================================================================
+  [Start] Medium devices (desktops, 992px and up)
+========================================================================== */
+@media screen and (min-width: 992px) {
+  /* 
+     [Start] Header
+     +-----------------------------------+
+  */
+  #cshero-menu-mobile {
+    display: none !important;
+  }
+
+  /* 
+     [Start] Main
+     +-----------------------------------+
+  */
+  .vc_row.vc_row-o-content-middle .fp-scroller > .vc_column_container,
+  .vc_row.vc_row-o-content-middle .fp-tableCell > .vc_column_container {
+    align-items: center;
+  }
+  .vc_row.vc_row-flex .fp-scroller,
+  .vc_row.vc_row-flex .fp-scroller > .vc_column_container,
+  .vc_row.vc_row-flex .fp-tableCell,
+  .vc_row.vc_row-flex .fp-tableCell > .vc_column_container {
+    display: flex;
+  }
+  .vc_row.vc_row-flex .fp-scroller > .vc_column_container > .vc_column-inner,
+  .vc_row.vc_row-flex .fp-tableCell > .vc_column_container > .vc_column-inner {
+    flex-grow: 1;
+    display: flex;
+  }
+  /* 
+     [Start] Footer
+     +-----------------------------------+
+  */
+}
+
+/* ==========================================================================
+   [Start] Small devices (tablets, 768px and up)
+========================================================================== */
+@media screen and (max-width: 991px) {
+  .container {
+      width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1280px) {
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* ==========================================================================
+   [Start] Extra small devices 
+========================================================================== */
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 480px) {
+ 
+}
